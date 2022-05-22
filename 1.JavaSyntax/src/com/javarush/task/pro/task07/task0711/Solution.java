@@ -6,7 +6,7 @@ package com.javarush.task.pro.task07.task0711;
 
 import java.util.Arrays;
 
-public class Solution {
+public class Solution<Human> {
     public static void main(String[] args) {
         Integer[] array = new Integer[5];
         fillArray(array, 3, 1, 3);
@@ -19,4 +19,5 @@ public class Solution {
 
         }
     }
+
 }

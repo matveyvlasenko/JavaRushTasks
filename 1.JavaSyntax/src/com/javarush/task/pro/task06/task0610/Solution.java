@@ -13,7 +13,3 @@ public class Solution {
         System.out.println("Полное имя: " + person.getFullName());
     }
 }
-
-
-
-

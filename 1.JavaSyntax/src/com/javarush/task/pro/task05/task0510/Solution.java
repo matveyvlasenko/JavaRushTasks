@@ -16,7 +16,6 @@ public class Solution {
                 System.out.print(result[i][j] + " ");
             }
             System.out.println();
-            
         }
     }
 }

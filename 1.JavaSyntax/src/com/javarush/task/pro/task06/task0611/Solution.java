@@ -8,7 +8,7 @@ public class Solution {
     public static void main(String[] args) {
         int[] array = {123, 7, -14, 67, 16, 98, 75, 576};
         System.out.println("В массиве: ");
-        printArray(array);
+        Solution.printArray(array);
         System.out.println("Минимальное число: " + getMinValue(array));
         System.out.println("Максимальное число: " + getMaxValue(array));
 

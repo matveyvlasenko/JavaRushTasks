@@ -6,14 +6,25 @@ package com.javarush.task.pro.task06.task0609;
 
 public class Solution {
     public static void main(String[] args) {
-
+        long result = cube(3L);
+        long ninthDegreeResult = ninthDegree(result);
+        System.out.println(result);
+        System.out.println(ninthDegreeResult);
     }
+
+
 
     public static long cube(long a){
         return a*a*a;
     }
-    public static long ninthDegree(long b){
-    long a = b*b*b;
-    return a;
+    public static long ninthDegree (long a){
+        long b = cube(a);
+       return  cube(b);
+
+
+
+
     }
+
+
 }
