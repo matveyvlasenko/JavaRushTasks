@@ -23,3 +23,4 @@ public class Solution {
             System.out.println(number1 + " " + number2);
         }
     }
+}
