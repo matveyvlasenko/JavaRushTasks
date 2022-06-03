@@ -40,28 +40,30 @@ public class Solution {
     public static void removeBugWithFor(ArrayList<String> list) {
         for (int i = 0; i < list.size(); i++) {
             String str = list.get(i);
-            if (str.contains("bug")) {
+            if (str.equalsIgnoreCase("bug")) {
                 list.remove(str);
                 i--;
             }
-
-
-            public static void removeBugWithWhile (ArrayList < String > list) {
-                Iterator<String> it = list.iterator();
-                while (it.hasNext()) {
-                    String str = it.next();
-                    if (str.contains("bug"))
-                        it.remove();
-
-                }
-            }
-
-            public static void removeBugWithCopy (ArrayList < String > list) {
-                ArrayList<String> listCopy = new ArrayList(list);
-                for (String str = listCopy) {
-                    if (str.contains("bug"))
-                        list.remove(str);
-                }
-            }
         }
+    }
+
+
+    public static void removeBugWithWhile(ArrayList<String> list) {
+        Iterator<String> it = list.iterator();
+        while (it.hasNext()) {
+            String str = it.next();
+            if (str.equalsIgnoreCase("bug"))
+                it.remove();
+        }
+    }
+
+    public static void removeBugWithCopy(ArrayList<String> list) {
+        ArrayList<String> listCopy = new ArrayList<>(list);
+        for (String str : listCopy) {
+            if (str.equalsIgnoreCase("bug"))
+                list.remove(str);
+
+        }
+    }
+}
 
