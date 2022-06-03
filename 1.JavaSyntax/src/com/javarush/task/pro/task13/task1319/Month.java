@@ -22,27 +22,18 @@ public enum Month {
     DECEMBER;
 
     public static Month[] getWinterMonths() {
-        Month[] WinterMonths = new Month[3];
-        //Collections.addAll(Month, 12,1,2);
-        return WinterMonths;
+        return new Month[]{Month.values()[11],Month.values()[0],Month.values()[1]};
     }
 
-    public static String[] getSpringMonths() {
-        String[] SpringMonths = new String[3];
-        // Collections.addAll(Month, 3,4,5);
-        return SpringMonths;
+    public static Month[] getSpringMonths() {
+        return new Month[]{Month.values()[2],Month.values()[3],Month.values()[4]};
     }
 
-    public static String[] getSummerMonths() {
-        String[] SummerMonths = new String[3];
-        //Collections.addAll(Month, 6,7,8);
-        return null;
+    public static Month[] getSummerMonths() {
+        return new Month[]{Month.values()[5],Month.values()[6],Month.values()[7]};
     }
 
     public static Month[] getAutumnMonths() {
-        //return new Month[] {Month.SEPTEMBER,Month.OCTOBER,Month.NOVEMBER};
-        //return new Month[]{Month.values()[8],Month.values()[9],Month.values()[10]};
         return Arrays.copyOfRange(Month.values(),8,11);
     }
 }
-//доделать остальные месяцы
