@@ -1,6 +1,6 @@
 package com.javarush.task.pro.task14.task1401;
 
-import com.javarush.task.pro.task10.task1017.SouthAmerica;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,22 +56,26 @@ public class Solution {
             System.out.println(UNKNOWN_ERROR);
         }
 
-        if (user.setAge(age) == -1){
+        if (user.setAge(age) == -1) {
             System.out.println(CANNOT_BE_NEGATIVE);
-    } else if (user.setAge(age) == -2) {
+        } else if (user.setAge(age) == -2) {
             System.out.println(CANNOT_BE_TOO_BIG);
-        } else if (user.setAge(age) != 0){
+        } else if (user.setAge(age) != 0) {
             System.out.println(UNKNOWN_ERROR);
         }
-        user.setName(name);
-
-        user.setAge(age);
 
         users.add(user);
     }
 
-    //static void findUserIndex(User user) {
-    //if (user.index)
-    // System.out.printf(FOUND, user.getName(), users.indexOf(user));
-
+    static void findUserIndex(User user) {
+        if (users.indexOf(user) == -1) {
+            System.out.printf(NOT_FOUND,user.getName());
+        } else {
+            System.out.printf(FOUND, user.getName(), users.indexOf(user));
+        }
+    }
 }
+
+
+
+

@@ -34,23 +34,21 @@ public class Solution {
         while (true) {
             System.out.print(PROMPT_STRING);
             String input = scanner.nextLine();
-            if (input.toLowerCase().equals(EXIT)) {//почему EXIT заглавными буквами?
+            if (input.toLowerCase().equals(EXIT)) {
                 break;
             }
 
-            int studentId;
-            try {
-                studentId = Integer.parseInt(input);
-            } catch (NumberFormatException exception) {
-                System.out.println(INTEGER_REQUIRED);
-                continue;
-            }
-
+            // int studentId;
+            try{
+            int studentId = Integer.parseInt(input);
 
             try {
                 System.out.println(ANSWERING + studentsJournal.get(studentId));
             } catch (Exception e) {
                 System.out.println(NOT_EXIST);
+            }}
+            catch (NumberFormatException e){
+                System.out.println(INTEGER_REQUIRED);
             }
         }
     }

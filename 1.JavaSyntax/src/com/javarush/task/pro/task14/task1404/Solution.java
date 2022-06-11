@@ -39,15 +39,14 @@ public class Solution {
             }
 //нужно ли сначала создать int для студент ID?
             try {
-              int  studentId = Integer.parseInt(input);
+                int studentId = Integer.parseInt(input);
                 System.out.println(ANSWERING + studentsJournal.get(studentId));
+            } catch (NumberFormatException numberFormatException) {
+                System.out.println(INTEGER_REQUIRED);
+            } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
+                System.out.println(NOT_EXIST);
             }
-catch (NumberFormatException numberFormatException){
-    System.out.println(INTEGER_REQUIRED);
-}
-           catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
-               System.out.println(NOT_EXIST);
-           }
+
         }
     }
 }
