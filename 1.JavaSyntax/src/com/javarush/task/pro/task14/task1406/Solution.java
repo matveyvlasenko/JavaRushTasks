@@ -13,7 +13,7 @@ class Solution {
         buyElephant(null);
     }
 
-    static void buyElephant(String answer) {
+    static void buyElephant(String answer)  {
         Scanner scanner = new Scanner(System.in);
 
         if (answer == null) {
