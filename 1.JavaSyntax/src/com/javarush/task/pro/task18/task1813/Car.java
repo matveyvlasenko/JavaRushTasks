@@ -22,5 +22,3 @@ public class Car {
         return "Car " + model + ", electric - " + isElectric;
     }
 }
-// cars.forEach(car -> car.getModel());
-//cars.forEach(Car::getModel);
