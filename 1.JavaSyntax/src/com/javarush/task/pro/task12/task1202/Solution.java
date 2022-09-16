@@ -6,7 +6,6 @@ package com.javarush.task.pro.task12.task1202;
 
 public class Solution {
     Byte byteValueBox;
-    byte byteValue = byteValueBox.byteValue();
     Short shortValueBox;
     Integer integerValueBox;
     Long longValueBox;
@@ -17,5 +16,18 @@ public class Solution {
     Character characterValueBox;
     Boolean booleanValueBox;
 
-    //напишите тут ваш код
+    byte byteValue = byteValueBox.byteValue();
+    short shortValue = shortValueBox.shortValue();
+    int intValue = integerValueBox.intValue();
+    long longValue = longValueBox.longValue();
+
+    float floatValue = floatValueBox.floatValue();
+    double doubleValue = doubleValueBox.doubleValue();
+
+    char charValue = characterValueBox.charValue();
+    boolean booleanValue = booleanValueBox.booleanValue();
+
+    public static void main(String[] args) {
+
+    }
 }
