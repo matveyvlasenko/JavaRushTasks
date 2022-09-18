@@ -18,7 +18,8 @@ public class Solution {
 String temp = lines.get(0);
 char [] tempChar = temp.toCharArray();
         //из файла и записывает его в список lines
-        //дальше нужно проверять, является ли символ один из списка, и если нет,выводить его на экран
+        //дальше нужно проверять, является ли символ один из списка,
+        // и если нет,выводить его на экран
         for (String line : lines) {
 
             System.out.println(line.replaceAll("[.,\\s]",""));

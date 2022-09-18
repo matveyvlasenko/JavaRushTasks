@@ -14,8 +14,8 @@ public class Solution {
     public static void main(String[] args)  {
        try   {
            Scanner scanner = new Scanner(System.in);
-           int a = 4/0;
            List<String> lines = Files.readAllLines(Path.of(scanner.nextLine()));
+           
            for (int i = 0; i < lines.size(); i = i + 2) {
                System.out.println(lines.get(i));
            }
