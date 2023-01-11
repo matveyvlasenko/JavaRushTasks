@@ -6,7 +6,7 @@ package com.javarush.task.task22.task2212;
 
 public class Solution {
     public static boolean checkTelNumber(String telNumber) {
-        return false;
+        return true;
     }
 
     public static void main(String[] args) {
